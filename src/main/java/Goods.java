@@ -83,7 +83,7 @@ public class Goods {
         System.out.println("Добавленные товары: \n" + goods);
         billPerPerson = totalBill / numberOfGuests;
         String roubles = RoubleFormatter.returnRoubleString(billPerPerson);
-        System.out.println(String.format("Каждый человек должен заплатить по %.2f %s", billPerPerson, roubles));
+        System.out.println(String.format("Каждый человек должен заплатить %.2f %s", billPerPerson, roubles));
     }
 
 }

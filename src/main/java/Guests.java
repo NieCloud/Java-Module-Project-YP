@@ -10,12 +10,13 @@ public class Guests {
     public void setNumberOfGuests() {
         System.out.println("На скольких человек необходимо разделить счет?");
         while (true) {
-            numberOfGuests = returnCorrectUserInputAsInt();
-            if (numberOfGuests > 1) {
+            int tempNumberOfGuests = returnCorrectUserInputAsInt();
+            if (tempNumberOfGuests > 1) {
+                numberOfGuests = tempNumberOfGuests;
                 break;
-            } if (numberOfGuests == 1) {
+            } if (tempNumberOfGuests == 1) {
                 System.out.println("На одного счет делить смысла нет");
-            } if (numberOfGuests < 1) {
+            } if (tempNumberOfGuests < 1) {
                 System.out.println("Число должно быть больше 1");
             }
 
