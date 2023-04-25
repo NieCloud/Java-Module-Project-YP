@@ -36,7 +36,15 @@ public class Goods {
 
             System.out.println("Введите стоимость товара в формате рубли.копейки (например 10.22):");
 
-            userInputGoodValue = checkUserInputAsDouble();
+            while (true) {
+                userInputGoodValue = checkUserInputAsDouble();
+                if (userInputGoodValue < 0) {
+                    System.out.println("Стоимость товара должна быть неотрицательной");
+                } else {
+                    break;
+                }
+            }
+
             totalBill += userInputGoodValue;
             tempGoods = tempGoods.concat(String.format(" - Цена: %.2f", userInputGoodValue));
         }
@@ -58,6 +66,8 @@ public class Goods {
                 System.out.println("Введите корректную стоимость в формате рубли.копейки (например 10.22):");
             }
         }
+
+
         return correctDoubleInput;
     }
 
