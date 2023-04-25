@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Calculator {
+public class Goods {
     private double billPerPerson = 0;
     private double totalBill = 0;
     private String goods = "";

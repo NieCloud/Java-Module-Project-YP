@@ -4,10 +4,11 @@ public class Main {
         Guests firstGuestList = new Guests();
         firstGuestList.setNumberOfGuests();
 
+        Goods testGoods = new Goods();
 
-        Calculator testCalculator = new Calculator();
-        testCalculator.createListOfGoods();
-        testCalculator.calculateAndShowResultsPerGuest(firstGuestList.getNumberOfGuests());
+
+        testGoods.createListOfGoods();
+        testGoods.calculateAndShowResultsPerGuest(firstGuestList.getNumberOfGuests());
 
     }
 }
