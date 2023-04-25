@@ -1,8 +1,7 @@
 import java.util.Scanner;
 
 public class Guests {
-    private int numberOfGuests = -1;
-    Scanner scanner = new Scanner(System.in);
+    private int numberOfGuests = 0;
 
     /**
      Метод устанавливает количество гостей, на которых необходимо разделить счет, на основе
@@ -27,7 +26,8 @@ public class Guests {
      Метод проверяет, является ли ввод пользователя int
      */
     private int returnCorrectUserInputAsInt() {
-        int correctIntInput = 0;
+        Scanner scanner = new Scanner(System.in);
+        int correctIntInput;
         while (true) {
             try {
                 correctIntInput = Integer.parseInt(scanner.next());

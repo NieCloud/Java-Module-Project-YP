@@ -1,6 +1,13 @@
 
 public class Main {
     public static void main(String[] args) {
-        Guests newNumberOfGuest = new Guests();
+        Guests firstGuestList = new Guests();
+        firstGuestList.setNumberOfGuests();
+
+
+        Calculator testCalculator = new Calculator();
+        testCalculator.createListOfGoods();
+        testCalculator.calculateAndShowResultsPerGuest(firstGuestList.getNumberOfGuests());
+
     }
 }
