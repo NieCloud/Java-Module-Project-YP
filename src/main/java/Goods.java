@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class Goods {
-    private double billPerPerson = 0;
     private double totalBill = 0;
     private String goods = "";
 
@@ -81,7 +80,7 @@ public class Goods {
             return;
         }
         System.out.println("Добавленные товары: \n" + goods);
-        billPerPerson = totalBill / numberOfGuests;
+        double billPerPerson = totalBill / numberOfGuests;
         String roubles = RoubleFormatter.returnRoubleString(billPerPerson);
         System.out.println(String.format("Каждый человек должен заплатить %.2f %s", billPerPerson, roubles));
     }
