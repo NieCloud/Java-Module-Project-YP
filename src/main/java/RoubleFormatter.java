@@ -1,7 +1,7 @@
 public class RoubleFormatter {
     public static String returnRoubleString(double sum) {
         int integerValueOfSum = (int) sum;
-        if (integerValueOfSum % 100 >= 10 && integerValueOfSum % 100 <= 20) {
+        if (integerValueOfSum % 100 > 10 && integerValueOfSum % 100 < 20) {
             return "рублей";
         }
         if (integerValueOfSum % 10 == 1) {
